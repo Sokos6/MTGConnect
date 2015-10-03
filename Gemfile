@@ -52,3 +52,4 @@ gem 'simple_form'
 
 gem 'devise'
 
+gem 'gravatarify', '~> 3.1.1'
