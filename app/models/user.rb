@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :username
 
   has_many :friendships, dependent: :destroy
-  has_many :inverse_friendships, class_name: "Friendships", foreign_key: "friend_id", dependent: :destroy
+  has_many :inverse_friendships, class_name: "Friendship", foreign_key: "friend_id", dependent: :destroy
 
 
   def request_friendship(user_2)
